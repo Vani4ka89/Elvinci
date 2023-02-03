@@ -201,12 +201,13 @@ h4::before {
 }
 
 .kategorie {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.kategorie p {
+.kategorie li {
     font-size: 16px;
     line-height: 132%;
     letter-spacing: 0.01em;
@@ -215,12 +216,13 @@ h4::before {
 }
 
 .tags {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.tags p {
+.tags li {
     padding: 5px 10px;
     background: #323c51;
     border-radius: 10px;
@@ -238,7 +240,7 @@ h4::before {
     row-gap: 20px;
 }
 
-.social-info p {
+.social-info span {
     font-size: 14px;
     line-height: 132%;
     letter-spacing: 0.01em;
