@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+    height: 100%;
     font-family: 'League Spartan', 'Poppins', sans-serif;
 }
 
@@ -28,19 +29,20 @@ a {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 95%;
 }
 
 /**************************HEADER******************/
 .header {
     width: 100%;
-    height: 729px;
+    /*height: 729px;*/
     background-image: url("../images/bg_image_header.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .header-top {
-    padding: 12px 0;
+    padding: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,8 +65,9 @@ a {
     font-size: 50px;
     line-height: 56px;
     color: #FFFFFF;
-    margin-top: 72px;
-    margin-bottom: 90px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-left: 12px;
 }
 
 .photo-content {
@@ -73,8 +76,12 @@ a {
     align-items: flex-end;
 }
 
+.photo-content > img {
+    width: 65%;
+}
+
 .header-bottom-description {
-    width: 359px;
+    width: 30%;
     min-height: 147px;
 }
 
@@ -109,7 +116,7 @@ h4::before {
 .main {
     width: 100%;
     height: 1062px;
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .main-info {
@@ -149,7 +156,7 @@ h4::before {
 }
 
 .blocks {
-    width: 384px;
+    width: 32%;
 }
 
 .blocks h4 {
@@ -174,14 +181,14 @@ h4::before {
 }
 
 .photos {
-    width: 384px;
+    width: 100%;
     height: 237px;
 }
 
 /*********************FOOTER*********************/
 .footer {
     padding-top: 64px;
-    margin-top: 150px;
+    margin-top: 75px;
     width: 100%;
     height: 236px;
     background: #1B263E;
@@ -251,4 +258,57 @@ h4::before {
 .social-icon {
     display: flex;
     column-gap: 8px;
+}
+
+/***********************MEDIA*******************/
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header-top {
+        padding: 0;
+    }
+
+    .header-bottom h2 {
+        margin: 25px 0 30px 0;
+    }
+
+    .photo-content > img {
+        width: 60%;
+    }
+
+    .header-bottom-description {
+        width: 38%;
+    }
+
+    .container {
+        max-width: 98%;
+    }
+
+    .main-info {
+        height: 100%;
+    }
+
+    .main-info-top,
+    .main-info-bottom {
+        height: 100%;
+    }
+
+    .blocks {
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+
 }
